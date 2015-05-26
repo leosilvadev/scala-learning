@@ -36,12 +36,18 @@ object arrays_lists {
   def myArray(number: Int): Array[Int] = Array(number, number, number)
                                                   //> myArray: (number: Int)Array[Int]
   
-	myArray(util.Random.nextInt(10))          //> res1: Array[Int] = Array(9, 9, 9)
+	myArray(util.Random.nextInt(10))          //> res1: Array[Int] = Array(6, 6, 6)
 	
 	
 	//Now the parameter is get as a function, so it executes the function, so number is a call
 	//to the function passed and evaluate every time it is called!
 	def funcArray(number: => Int): Array[Int] = Array(number, number, number)
                                                   //> funcArray: (number: => Int)Array[Int]
-	funcArray(util.Random.nextInt(10))        //> res2: Array[Int] = Array(5, 4, 9)
+	funcArray(util.Random.nextInt(10))        //> res2: Array[Int] = Array(8, 2, 9)
+	
+	//Creates a Array with a range with the number of numbers based on first parameter
+	//the second parameter accepts a function to be executed in every tabulate iteration
+	val tabArray = Array.tabulate(10)(num => num * num)
+                                                  //> tabArray  : Array[Int] = Array(0, 1, 4, 9, 16, 25, 36, 49, 64, 81)
+	
 }
