@@ -4,10 +4,10 @@ object Main {
 
   def main(args: Array[String]){
     val users = new Users
-    users.add(User("1", "1", "1"))
-    users.add(User("2", "2", "2"))
-    users.add(User("3", "3", "3"))
-    println(users.users)
+    users.add(User("Leonardo", "leosilvadev", "leo123"))
+    users.add(User("John", "johndev", "john123"))
+    users.add(User("Clue", "cluedev", "clue123"))
+    println(users.sort)
   }
   
 }
