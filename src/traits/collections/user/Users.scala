@@ -1,11 +1,9 @@
 package traits.collections.user
 
-import scala.collection.mutable.MutableList
+import scala.collection.mutable.Buffer
 
 
-class Users extends Sortable[User] {
-  
-  private val users = new MutableList[User]
+class Users(val users: Buffer[User] = Buffer[User]()) extends Sortable[User] {
   
   def add(user: User) : Unit = {
     println("Before add: "+users.size)
