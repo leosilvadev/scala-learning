@@ -8,7 +8,7 @@ class Users(val users: Buffer[User] = Buffer[User]()) extends Sortable[User] {
   def add(user: User) : Unit = {
     println("Before add: "+users.size)
     println("Adding: "+user)
-    users.+=(user)
+    users += user
     println("Added: "+users.size)
   }
   

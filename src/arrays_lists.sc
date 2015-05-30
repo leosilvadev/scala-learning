@@ -36,18 +36,35 @@ object arrays_lists {
   def myArray(number: Int): Array[Int] = Array(number, number, number)
                                                   //> myArray: (number: Int)Array[Int]
   
-	myArray(util.Random.nextInt(10))          //> res1: Array[Int] = Array(6, 6, 6)
+	myArray(util.Random.nextInt(10))          //> res1: Array[Int] = Array(2, 2, 2)
 	
 	
 	//Now the parameter is get as a function, so it executes the function, so number is a call
 	//to the function passed and evaluate every time it is called!
 	def funcArray(number: => Int): Array[Int] = Array(number, number, number)
                                                   //> funcArray: (number: => Int)Array[Int]
-	funcArray(util.Random.nextInt(10))        //> res2: Array[Int] = Array(8, 2, 9)
+	funcArray(util.Random.nextInt(10))        //> res2: Array[Int] = Array(5, 9, 7)
 	
 	//Creates a Array with a range with the number of numbers based on first parameter
 	//the second parameter accepts a function to be executed in every tabulate iteration
 	val tabArray = Array.tabulate(10)(num => num * num)
                                                   //> tabArray  : Array[Int] = Array(0, 1, 4, 9, 16, 25, 36, 49, 64, 81)
 	
+	val (first,last) = tabArray.splitAt(4)    //> first  : Array[Int] = Array(0, 1, 4, 9)
+                                                  //| last  : Array[Int] = Array(16, 25, 36, 49, 64, 81)
+	first                                     //> res3: Array[Int] = Array(0, 1, 4, 9)
+	
+	last                                      //> res4: Array[Int] = Array(16, 25, 36, 49, 64, 81)
+	
+	
+	
+	
+	
+	val patchArray = Array.fill(10)(util.Random.nextInt(100))
+                                                  //> patchArray  : Array[Int] = Array(33, 26, 50, 85, 6, 92, 35, 90, 4, 69)
+	//Updating some values inside the array
+	patchArray.patch(1, Array(1, 2, 3, 4), 4) //> res5: Array[Int] = Array(33, 1, 2, 3, 4, 92, 35, 90, 4, 69)
+	
+	//It generates a new array!
+	patchArray                                //> res6: Array[Int] = Array(33, 26, 50, 85, 6, 92, 35, 90, 4, 69)
 }
