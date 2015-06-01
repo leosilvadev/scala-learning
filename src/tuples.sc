@@ -26,4 +26,11 @@ object tuples {
     case `option` => s"It's the same of option ($option) value!"
     case _        => s"It's NOT the same of option ($option) value!"
   }                                               //> resultOption  : String = It's the same of option (10) value!
+  
+  //Cool tuples :)
+  
+  ("name" -> "username") -> ("password" -> "age") //> res1: ((String, String), (String, String)) = ((name,username),(password,age)
+                                                  //| )
+  1 -> 2 -> 3 -> 4                                //> res2: (((Int, Int), Int), Int) = (((1,2),3),4)
+  
 }
