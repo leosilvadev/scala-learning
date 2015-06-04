@@ -2,32 +2,32 @@ import traits.collections.user.User
 
 object HighOrderFunctions {
 
-	val users = Array.fill(10)(User.generate) //> users  : Array[traits.collections.user.User] = Array(┊歴埥㸁솭╛怍�
-                                                  //| �添琾, 빗嗗碭্飱퓭ꯒ흮诇⪕, secret: 嬾濼喩ꐿ埢纻⻵㜾X�
-                                                  //| �, 듫큋꧳㮤囁扮뒿맑툻⓲, Ꞇ闅殤ਃ䜇糚⎹禇⩈쒅, secret: �
-                                                  //| ��꿭뿢㮵闖⽃櫾㭐칠與, ᝤ兙㜠䃽禼ⳛᶊ믧㹄켞, ꓀儃⍬꽧�
-                                                  //| ��ꂞ펒걨ዓ俺, secret: 焑陮鑹兄糑狰ቛா縋戉, 퓮ጼً剦뭧臂
-                                                  //| 臬퐜菔炋, ⽰ꚝꡯ쩿蘭臮ᵤݽᒫ⑏, secret: 霊㠔⹓㒅ኊ䵚ජ�
-                                                  //| �跹쟥, 䂤텶Ⰼ潚僖朵⋁⊼茽፬, 瘟磃쫃怐㌐ՠ뻋稫麣讷, secr
-                                                  //| et: 濺淟齥킚儬蘽퇑ꅸ夹ࡪ, ල꞉붝깡揮㭌섺텘䈴롖, 毉뛄Ȝ
-                                                  //| 絺꙳᠁퀽膒㥄鑓, secret: ퟞ窵覲ꂯ盎ꪸ嵋佯鶞婉, ܙ柑侬徏�
-                                                  //| �库ᖆྡ릪㎻, 睆䐄틻ᑌ䫩ꁽ탒쩫뤖伽, secret: ㈗싨붐澏⍘먦
-                                                  //| 䯋先⯅䴻, 淞鱩庨ꠏ槣釱ꋏ黓碃㦟, 㵑⣒꺭繛낌☴᡹䉃㨦곿
-                                                  //| , secret: 턬씟䢌햣ỏ苮얞㈪ᳮ蘬, 䣂ꃱൌ⟬䨞厩诓ږ⚵櫳, ᡵ
-                                                  //| 䆝ք⻅⭓摪랭耦氻摄, secret: ⬨꿸迢⮭甖焷ꬫ挅慓ꪂ, 慧뷅�
-                                                  //| �넛ණ焝ᤊ쩿༴饪, 䎆ڤ⓺澤ꭳ茦狀㵬᳓ԡ, secret: 撬찡밿髀�
-                                                  //| �ᄬ왛繘题ꇑ)
+	val users = Array.fill(10)(User.generate) //> users  : Array[traits.collections.user.User] = Array(䨾倁縙甾뾅昰㍆�
+                                                  //| �䜼倵, 牋锼㖫ꯝᰜ髋滧่揻痧, secret: І技䓵㱞ପ䎰폈嬙静�
+                                                  //| ��, 漉椧늅篒뉚秲핣潟稤ꜷ, 묬℈ꉈꙡᩦ䝡쳢䝓㍒鲓, secret: 
+                                                  //| ᛅ峒Ἳ㊋ك褻഻纥郪蹱, 䖞ᩞ퓾ै籩啡┏鋆⊐囐, 쉒텈ᙌ紏�
+                                                  //| ��䢓ꀛ⒀橙朹, secret: ਫ굮ᤲ흇䈕쯴鼸瀭褪쒅, 㙺◮䀩ᆶ兴�
+                                                  //| �崮獡㖶쳹, 맑ꏆⅣ뉶㣗僳荧젱㝀踾, secret: 寅ꭙᗣ烀炧㾣孺
+                                                  //| 傉⭸ㆵ, ꠺騛街겋劤ඣ㌹㗝堅譾, 誥돵ᓂላ㪦▝饭旇⬓┌, s
+                                                  //| ecret: 㱿쐴屎耇뜒맡ⳑ唜訣툴, 赵爖뼈祦ꕏ생๟確㛗谣, 恂�
+                                                  //| �䊰떓鑉㌖乃ㅮ科⶿, secret: 徐盻쓟儃颧Ⓥ븮幐ꊵ䥛, ䷡乺햴
+                                                  //| 災쵤憥⺌౵寍䉗, 륽萅㹗汲㎂뫒⯗ㆼꓡ敵, secret: ⇑ැ획頱�
+                                                  //| ��嚤樜ฑ龯ằ, ֒疶냀ᴴἄ癜騯䄞稍䴆, 疉ฮ㨔狯粴將❪Ύ�
+                                                  //| �Ṩ, secret: ♹୸蒂롽糋㚅썕鷍܇勵, 뙤ᬔ孠唎殴䧊턭惁䙥ण,
+                                                  //|  筧䆊婯ᄆ뺎毜⇌䜝耵퐹, secret: バ楨怐㵽話皦䎗唋그Ș, ᨒ�
+                                                  //| ��퐬빣ὺ഍ꨊກ뒐祭, 鰆᳋䲱☟滥龪蜞懩읨剉, secret: 뺕䤵�
+                                                  //| �ᅮ梬件魯؛퍎拡)
 
 	users.filter { _.age > 18 }.map { user => s"${user.name} [${user.username}], ${user.age} old " }
-                                                  //> res0: Array[String] = Array("┊歴埥㸁솭╛怍㮦添琾 [빗嗗碭্飱
-                                                  //| 퓭ꯒ흮诇⪕], 58 old ", "듫큋꧳㮤囁扮뒿맑툻⓲ [Ꞇ闅殤ਃ䜇
-                                                  //| 糚⎹禇⩈쒅], 58 old ", "ᝤ兙㜠䃽禼ⳛᶊ믧㹄켞 [꓀儃⍬꽧苒
-                                                  //| ꂞ펒걨ዓ俺], 68 old ", "퓮ጼً剦뭧臂臬퐜菔炋 [⽰ꚝꡯ쩿蘭�
-                                                  //| ��ᵤݽᒫ⑏], 28 old ", "䂤텶Ⰼ潚僖朵⋁⊼茽፬ [瘟磃쫃怐㌐ՠ
-                                                  //| 뻋稫麣讷], 54 old ", "ල꞉붝깡揮㭌섺텘䈴롖 [毉뛄Ȝ絺꙳᠁�
-                                                  //| ��膒㥄鑓], 42 old ", "淞鱩庨ꠏ槣釱ꋏ黓碃㦟 [㵑⣒꺭繛낌☴�
-                                                  //| ��䉃㨦곿], 47 old ", "䣂ꃱൌ⟬䨞厩诓ږ⚵櫳 [ᡵ䆝ք⻅⭓摪랭
-                                                  //| 耦氻摄], 58 old ")
+                                                  //> res0: Array[String] = Array("䨾倁縙甾뾅昰㍆䂦䜼倵 [牋锼㖫ꯝᰜ
+                                                  //| 髋滧่揻痧], 71 old ", "漉椧늅篒뉚秲핣潟稤ꜷ [묬℈ꉈꙡᩦ
+                                                  //| 䝡쳢䝓㍒鲓], 41 old ", "꠺騛街겋劤ඣ㌹㗝堅譾 [誥돵ᓂላ㪦
+                                                  //| ▝饭旇⬓┌], 49 old ", "赵爖뼈祦ꕏ생๟確㛗谣 [恂⏾䊰떓鑉
+                                                  //| ㌖乃ㅮ科⶿], 64 old ", "䷡乺햴災쵤憥⺌౵寍䉗 [륽萅㹗汲㎂
+                                                  //| 뫒⯗ㆼꓡ敵], 49 old ", "֒疶냀ᴴἄ癜騯䄞稍䴆 [疉ฮ㨔狯粴�
+                                                  //| ��❪Ύ战Ṩ], 70 old ", "뙤ᬔ孠唎殴䧊턭惁䙥ण [筧䆊婯ᄆ뺎�
+                                                  //| ��⇌䜝耵퐹], 72 old ", "ᨒ얹퐬빣ὺ഍ꨊກ뒐祭 [鰆᳋䲱☟滥�
+                                                  //| ��蜞懩읨剉], 34 old ")
 
 
 	val a = Array(1,2,3,4,5)                  //> a  : Array[Int] = Array(1, 2, 3, 4, 5)
@@ -49,4 +49,15 @@ object HighOrderFunctions {
 
 	b.find(_%3 == 0).map( _/3).getOrElse(0)   //> res7: Int = 1
 
+
+	def completeFunction(i:Int): Int = ???    //> completeFunction: (i: Int)Int
+
+	val partialFunction:PartialFunction[Any,String] = {
+		case i:Int => "Number"
+		case s:String => "The string "+s
+	}                                         //> partialFunction  : PartialFunction[Any,String] = <function1>
+
+	partialFunction(1)                        //> res8: String = Number
+
+	partialFunction("MyName")                 //> res9: String = The string MyName
 }
