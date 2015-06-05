@@ -42,4 +42,5 @@ object sources {
   datas.map(_.maxTemp).max                        //> res0: Int = 111
      
 	source.close
+	
 }
