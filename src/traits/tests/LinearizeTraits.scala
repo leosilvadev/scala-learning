@@ -40,7 +40,7 @@ trait WriterUser { this: BaseWriter =>
 }
 
 object LinearizeTraits extends App {
-  //Execute the method write of the Traits
+  //Execute the method 'write' of the Traits, consider the Traits from right to left
   val bufBinPrint = new Printer with BinaryFormat with Buffering
   bufBinPrint.write(1)
   bufBinPrint.write(2)
