@@ -20,4 +20,9 @@ object expressions {
 		case _ 	  => "Not OK!"
 	}                                         //> res3: String = That's OK!
 	
+	val pattern = "^Scala".r                  //> pattern  : scala.util.matching.Regex = ^Scala
+	val str = "I really Enjoy Scala programming! :)"
+                                                  //> str  : String = I really Enjoy Scala programming! :)
+  println(pattern findFirstIn str)                //> None
+	
 }

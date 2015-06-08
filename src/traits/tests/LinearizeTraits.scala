@@ -58,6 +58,11 @@ object LinearizeTraits extends App {
   binBufPrint.write(5)
   binBufPrint.write(6)
 
+  println()
+  println()
+  println()
+  println()
   val user = new WriterUser with Printer with Buffering
+  user.useWrite(Iterator(1,2,3,4,5,6))
 }
 
