@@ -14,4 +14,8 @@ case class Game(configFile: String) {
     damageItems
   }
   
+  def saveXML(filename: String) {
+    xml.XML.save(filename, users)
+  }
+  
 }
