@@ -6,6 +6,10 @@ package game
 
 case class Item(itemType:String, name:String, power:Int, category:String) {
   
+  def xml = {
+    <item type={itemType} name={name} power={power.toString()} category={category}/>
+  }
+  
 }
 
 object Item {
