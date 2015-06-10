@@ -1,0 +1,10 @@
+<users>
+	<user id="1234" name="Leonardo">
+		<items>
+			<item type="sword" name="Magic Sword" power="50" category="damage"/>
+			<item type="knife" name="Sharp knife" power="15" category="damage"/>
+			<item type="knife" name="Sharp knife" power="15" category="damage"/>
+			<item type="shield" name="Steel Shield" power="80" category="defense"/>
+		</items>
+	</user>
+</users>
