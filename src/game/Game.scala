@@ -10,7 +10,7 @@ case class Game(configFile: String) {
   def damageItems = {
     val damageItems = users \\ "item" filter { item =>
       (item \ "@category").text == "damage" 
-    }
+    } map { Item(_) }
     damageItems
   }
   
